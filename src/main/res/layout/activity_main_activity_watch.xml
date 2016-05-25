@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:transcriptMode="normal"
+        android:stackFromBottom="true" />
+    <LinearLayout
+        android:id="@+id/input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_send"
+            android:text="Start"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:background="#3656f8"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:inputType="textNoSuggestions"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
